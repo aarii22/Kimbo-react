@@ -1,0 +1,40 @@
+@mixin avatar($x)
+    width: $x
+    height: $x
+    border-radius: 50%
+    text-align: center
+    display: inline-block
+@mixin btn-prop($x, $y)
+    background-color: $x
+    color: $y
+    border-radius: 2px
+    padding: 7px 15px
+    border: none
+    cursor: pointer
+    outline: none
+    line-height: 1
+@mixin card($x)
+    padding: $x
+    background-color: $white
+    position: relative
+    margin-bottom: 15px
+    border: 1px solid $border-gray
+@mixin bar-progress($x)
+    width: $x
+    background-color: $primary-color
+    height: 5px
+    border-radius: 15%
+@mixin absolute($x, $y)
+    position: absolute
+    left: $x
+    bottom: $y
+@mixin card-ellipsis($x, $y)
+    position: absolute
+    right: $x
+    top: $y
+    @include avatar(25px)
+    line-height: 24px
+    font-size: 16px
+    &:hover
+        background-color: $border-gray
+        transition: all 0.1s
